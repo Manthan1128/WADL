@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>PICT Mobile Website</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+        <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+        <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+        <style>
+          .course-container {
+            display: flex;
+            justify-content: space-between;
+          }
+      
+          .course {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-right: 10px;
+          }
+      
+          .course img {
+            max-width: 100%;
+          }
+      
+          .course p {
+            margin-top: 5px;
+          }
+
+          
+        </style>
+      </head>
+<body>
+
+<div data-role="page" id="homepage">
+
+  <div data-role="header">
+    <h1>PICT</h1>
+  </div>
+
+  <div data-role="navbar">
+    <ul>
+      <li><a href="#about" data-icon="info" >About Us</a></li>
+      <li><a href="#courses" data-icon="grid">Courses</a></li>
+      <li><a href="#contact" data-icon="phone">Contact Us</a></li>
+    </ul>
+  </div>
+
+  <div data-role="content">
+    <h2>Welcome to Pune Institute of Computer Technology</h2>
+    <img src="pict_logo.png" alt="PICT Logo" style="max-width: 100%;">
+    <p>We provide quality education in computer technology.</p>
+  </div>
+
+  <div data-role="footer">
+    <h4>&copy; 2024 PICT</h4>
+  </div>
+
+</div>
+
+<div data-role="page" id="about">
+
+  <div data-role="header">
+    <h1>About Us</h1>
+    <a href="#homepage" data-icon="home" class="ui-btn-right" >Home</a>
+  </div>
+
+  <div data-role="content">
+    <h2>About Pune Institute of Computer Technology</h2>
+    <img src="pict_building.jpg" alt="PICT Building" style="max-width: 100%;">
+    <p>Write about the history, mission, and vision of PICT here.</p>
+  </div>
+
+  <div data-role="footer">
+    <h4>&copy; 2024 PICT</h4>
+  </div>
+
+</div>
+
+<div data-role="page" id="courses">
+
+    <div data-role="header">
+      <h1>Courses</h1>
+      <a href="#homepage" data-icon="home" class="ui-btn-right">Home</a>
+    </div>
+  
+    <div data-role="content">
+      <h2>Our Courses</h2>
+      <div class="course-container">
+        <div class="course">
+          <img src="cs_course.jpg" alt="Computer Science" >
+          <p>CS</p>
+        </div>
+        <div class="course">
+          <img src="it_course.jpg" alt="Information Technology">
+          <p>IT</p>
+        </div>
+        <div class="course">
+          <img src="entc_course.jpg" alt="Electronics and Telecommunication">
+          <p>ENTC</p>
+        </div>
+      </div>
+    </div>
+  
+    <div data-role="footer">
+      <h4>&copy; 2024 PICT</h4>
+    </div>
+  
+  </div>
+  
+  
+</div>
+
+<div data-role="page" id="contact">
+
+  <div data-role="header">
+    <h1>Contact Us</h1>
+    <a href="#homepage" data-icon="home" class="ui-btn-right">Home</a>
+  </div>
+
+  <div data-role="content">
+    <h2>Contact Pune Institute of Computer Technology</h2>
+    <a>Email:Pict@edu.com</a>
+    <br>
+    <a>LinkedIn:PICT</a>
+    <br>
+    <a>Instagram:PICT</a>
+    
+  </div>
+
+  <div data-role="footer">
+    <h4>&copy; 2024 PICT</h4>
+  </div>
+
+</div>
+
+</body>
+</html>

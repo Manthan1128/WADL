@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Table Generator W7</title>
+    <style>
+      table {
+        border-collapse: collapse;
+        margin-bottom: 20px;
+      }
+      td {
+        border: 1px solid black;
+        padding: 5px;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <label for="input1">Enter Table 1 Dimensions (Rows#Columns):</label>
+    <input type="text" id="input1" />
+    <label for="input2">Enter Table 2 Dimensions (Rows#Columns):</label>
+    <input type="text" id="input2" />
+    <button onclick="generateTables()">Generate Tables</button>
+
+    <div id="tablesContainer"></div>
+
+    <script>
+      function generateTables() {
+        const input1 = document.getElementById("input1").value;
+        const input2 = document.getElementById("input2").value;
+        const [rows1, cols1, value1] = input1.split("#").map(Number);
+        const [rows2, cols2, value2] = input2.split("#").map(Number);
+        if (rows1 === rows2 && cols1 === cols2) {
+          const table1 = generateTable(rows1, cols1, value1);
+          const table2 = generateTable(rows2, cols2, value2);
+          const table3 = generateThirdTable(rows1, cols1, value1, value2);
+
+          document.getElementById("tablesContainer").innerHTML = "";
+          document.getElementById("tablesContainer").appendChild(table1);
+          document.getElementById("tablesContainer").appendChild(table2);
+          document.getElementById("tablesContainer").appendChild(table3);
+        } else {
+          alert("Dimensions of the tables are not the same.");
+        }
+      }
+
+      function generateTable(rows, cols, value) {
+        const table = document.createElement("table");
+        for (let i = 0; i < rows; i++) {
+          const row = table.insertRow();
+          for (let j = 0; j < cols; j++) {
+            const cell = row.insertCell();
+            const num = (i + 1) * (value + j);
+            cell.textContent = num;
+          }
+        }
+        return table;
+      }
+
+      function generateThirdTable(rows, cols, value1, value2) {
+        const table = document.createElement("table");
+        for (let i = 0; i < rows; i++) {
+          const row = table.insertRow();
+          for (let j = 0; j < cols; j++) {
+            const cell = row.insertCell();
+            if ((i + 1) * (value1 + j) === (i + 1) * (value2 + j)) {
+              const num = (i + 1) * (value1 + j);
+              cell.textContent = num;
+            } else {
+              const num = (i + 1) * (value1 + j) * (i + 1) * (value2 + j);
+              cell.textContent = num;
+            }
+          }
+        }
+        return table;
+      }
+    </script>
+  </body>
+</html>

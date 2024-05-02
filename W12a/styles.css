@@ -1,0 +1,22 @@
+.container{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.table {
+    background-color: #209bdc; /* Blue color */
+    color: black; /* Set text color to white for better contrast */;
+    width: 600px;
+    border: 10px solid grey;
+  }
+
+tr {
+    border: 5px solid white;
+}
+
+.userform{
+    background-color: rgb(238, 234, 137);
+    color: red;
+    font-size: 2rem;
+}

@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+    <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    <title>PICT</title>
+    <style>
+
+        .course-container{
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .course{
+            display: flex;
+            flex-direction:column ;
+            align-items: center;
+            margin-right: 10px;
+        }
+
+        .course img{
+            max-width: 100%;
+        }
+
+        .course p{
+            margin-top: 5px;
+        }
+
+        .abtus{
+            display:flex;
+            justify-content: space-between;
+        }
+        .abt{
+            flex-basis: 50%;
+        }
+
+        .abt :first-child{
+            margin-right: 10px;
+        } 
+        .abt img {
+            width: 100%;
+            height: 100%;
+            margin-left: 10px;
+        }
+        .abt p{
+            text-align: justify;
+            text-justify:inter-word;
+        }
+
+    </style>
+</head>
+<body>
+    <!--HomePage-->
+    <div data-role="page" id="homepage">
+        <div data-role="header">
+            <h1>PICT</h1>
+        </div>
+
+        <div data-role="navbar">
+            <ul>
+                <li><a href="#aboutus" data-icon="info" >About Us</a></li>
+                <li><a href="#courses" data-icon="grid">Courses</a></li>
+                <li><a href="#contactus" data-icon="phone">Contact</a></li>
+            </ul>
+        </div>
+
+        <div data-role="content">
+            <h2>Welcome to PICT </h2>
+            <img src="pict_logo.png" alt="pict" style="max-width: 100%;">
+            <p>We provide quality education</p>
+        </div>
+
+        <div data-role="footer">
+            <h4>&copy; PICT 2024</h4>
+        </div>
+
+    </div>
+
+    <!-----AboutUs-->
+
+    <div data-role="page" id="aboutus">
+
+        <div data-role="header">
+            <h1>About Us</h1>
+            <a href="#homepage" data-icon="home" class="ui-btn-right">Home</a>
+        </div>
+
+        <div data-role="content">
+            <h2>PICT is well renowned institute for computer and technology</h2>
+            <div class="abtus">
+                <div class="abt">
+                    <p>
+                        Vision: Pune Institute of Computer Technology aspires to be the leader in Higher technical education and research of International repute.
+                        
+                        Mission: To be the leading and the most sought after institute of education and research in emerging engineering and technology disciplines that attract, retains and sustains gifted individuals of significant potential.
+                        
+                        Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
+
+                        The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.
+
+                        Where can I get some?
+                        There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.
+
+                        5
+	                    paragraphs
+	                    words
+	                    bytes
+	                    lists
+	                    Start with 'Lorem
+                        ipsum dolor sit amet...'
+                        <br>
+
+                        
+                        Some Achievements:
+                        <br>
+                        At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, 
+                        ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, 
+                        ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, 
+                        ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, 
+                        ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.
+
+                        </p>
+                </div>
+
+                <div class="abt">
+                    <img src="pict_building.jpg" alt="PICT" style="width: 100%; max-height: 1000px;">
+                </div>
+            </div>
+            
+            
+        </div>
+        <div data-role="footer">
+            <h4>&copy; PICT 2024</h4>
+        </div>
+
+
+    </div>
+
+    <div data-role="page" id="courses">
+
+        <div data-role="header">
+            <h1>Courses</h1>
+            <a href="#homepage" data-icon="home" class="ui-btn-right">Home</a>
+        </div>
+
+        <div data-role="content">
+            <div class="course-container">
+                <div class="course">
+                    <img src="cs_course.jpg" alt="computer science"> 
+                    <p>Computer Science</p>
+                </div>
+                <div class="course">
+                    <img src="it_course.jpg" alt="Information Technology"> 
+                    <p>Information Technology</p>
+                </div>
+                <div class="course">
+                    <img src="entc_course.jpg" alt="ENTC"> 
+                    <p>ENTC</p>
+                </div>
+            </div>
+        </div>
+
+        <div data-role="footer">
+            <h4>&copy; PICT 2024</h4>
+        </div>
+
+
+        
+
+    </div>
+
+    <div data-role="page" id="contactus">
+
+        <div data-role="header">
+            <h1>Contact Us </h1>
+            <a href="#homepage" data-icon="home" class="ui-btn-right">Home</a>
+        </div>
+
+        <div data-role="content">
+            <h2>Contact Pune Institute of Computer Technology</h2>
+            <a>Email:Pict@edu.com</a>
+            <br>
+            <a>LinkedIn:PICT</a>
+            <br>
+            <a>Instagram:PICT</a>
+            
+        </div>
+
+        <div data-role="footer">
+            <h4>&copy; PICT 2024</h4>
+        </div>
+
+    </div>
+
+
+    
+</body>
+</html>
